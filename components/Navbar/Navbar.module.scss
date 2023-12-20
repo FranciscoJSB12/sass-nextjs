@@ -1,0 +1,35 @@
+@use "@/sass_partials" as *;
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  padding: 0 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-size: $text-xlg;
+    font-weight: 700;
+  }
+}
+
+.navbarList {
+  display: flex;
+  list-style: none;
+  li {
+    font-size: $text-md;
+    margin-left: 40px;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .navbarList {
+    display: none;
+  }
+}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import { Navbar } from "@/components/Navbar";
 import "./globals.scss";
 
 const roboto = Roboto({
@@ -8,7 +9,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Next-sass",
+  title: "Portfolio",
   description: "Website for practicing",
 };
 
@@ -19,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

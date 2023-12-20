@@ -1,0 +1,31 @@
+@use "@/sass_partials" as *;
+
+.mobileMenuIcon {
+  font-size: $icon-md;
+}
+
+.mobileMenuList {
+  width: 60%;
+  height: calc(100vh - 80px);
+  padding: 20px 10% 0;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  list-style: none;
+  border-right: 1px solid #ccc;
+  z-index: 10;
+
+  li {
+    margin-bottom: 40px;
+    font-size: $text-md;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 531px) {
+  .mobileMenu,
+  .mobileMenuIcon,
+  .mobileMenuList {
+    display: none;
+  }
+}
