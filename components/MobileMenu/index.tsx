@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
+import { NavigationList } from "../NavigationList";
 import styles from "./MobileMenu.module.scss";
 
 export function MobileMenu() {
@@ -12,14 +13,7 @@ export function MobileMenu() {
         className={styles.mobileMenuIcon}
         onClick={() => setIsMenuOpen((prev) => !prev)}
       />
-
-      {isMenuOpen && (
-        <ul className={styles.mobileMenuList}>
-          <li>Home</li>
-          <li>Work</li>
-          <li>About</li>
-        </ul>
-      )}
+      {isMenuOpen && <NavigationList style={styles.mobileMenuList} />}
     </div>
   );
 }

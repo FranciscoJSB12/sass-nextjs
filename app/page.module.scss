@@ -1,1 +1,13 @@
 @use "@/sass_partials" as *;
+
+.titleSection {
+  margin-top: 180px;
+  h1 {
+    color: #023e8a;
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: $text-xlg;
+  }
+}

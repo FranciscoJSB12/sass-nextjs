@@ -1,9 +1,10 @@
 @use "@/sass_partials" as *;
 
 .navbar {
-  height: 80px;
+  height: 70px;
   width: 100%;
   padding: 0 10%;
+  border-bottom: 1px solid #ccc;
   position: fixed;
   top: 0;
   left: 0;
@@ -11,8 +12,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
 
-  p {
+  span {
     font-size: $text-xlg;
     font-weight: 700;
   }
